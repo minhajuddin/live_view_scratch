@@ -8,8 +8,8 @@ defmodule LiveViewScratchWeb.CustomersLive do
   def render(assigns) do
     ~L"""
     <h2>Customers</h2>
-    <form phx-change=autocomplete>
-      <input type="text" name=name list="customers-name">
+    <form phx-change=autocomplete >
+      <input type="text" name=name list="customers-name" phx-debounce=1000>
 
 
     <%= if @customer != :none do %>
