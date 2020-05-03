@@ -21,6 +21,8 @@ defmodule LiveViewScratchWeb.Router do
 
     live "/light", LightLive, :index
     live "/license", LicenseLive, :index
+    live "/sales-dashboard", SalesDashboardLive, :index
+    live "/customers", CustomersLive, :index
   end
 
   # Other scopes may use custom stacks.
